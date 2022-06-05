@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple_Calculator Using HTML,CSS and, JAVASCRIPT</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<table class="calc">
+    <tr>
+        <td colspan="3" class="outputtext">
+            <input class="display-box" type="text" id="result" disabled/>
+        </td>
+        <td>
+            <input 
+                class="button"
+                type="button"
+                value="C"
+                onclick="clearscreen()"
+                style="background-color:#fb0066"
+            />
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <input 
+                class="button" type="button" value="1" onclick="display('1')"
+            />
+        </td>
+        <td>
+            <input
+                class="button" type="button" value="2" onclick="diplay('2')"
+            />
+        </td>
+
+        <td>
+            <input 
+                class="button" type="button" value="3" onclick="display('3')"
+            />
+        </td>
+        <td>
+            <input
+                class="button" type="button" value="/" onclick="diplay('/')"
+            />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input
+                class="button" type="button" value="4" onclick="diplay('4')"
+            />
+        </td>
+        <td>
+            <input 
+                class="button" type="button" value="5" onclick="display('5')"
+            />
+        </td>
+        <td>
+            <input
+                class="button" type="button" value="6" onclick="diplay('6')"
+            />
+        </td>
+        <td>
+            <input
+                class="button" type="button" value="-" onclick="diplay('-')"
+            />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input 
+                class="button" type="button" value="7" onclick="display('7')"
+            />
+        </td>
+        <td>
+            <input
+                class="button" type="button" value="8" onclick="diplay('8')"
+            />
+        </td>
+        <td>
+            <input 
+                class="button" type="button" value="9" onclick="display('9')"
+            />
+        </td>
+
+        <td>
+            <input 
+                class="button" type="button" value="+" onclick="display('+')"
+            />
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <input 
+                class="button" type="button" value="." onclick="display('.')"
+            />
+        </td>
+        <td>
+            <input
+                class="button" type="button" value="0" onclick="diplay('0')"
+            />
+        </td>
+        <td>
+            <input 
+                class="button" type="button" value="*" onclick="display('*')"
+            />
+        </td>
+        <td>
+            <input class="button" type="button" value="=" onclick="calculate()" style="background-color:#fb0066;"/>
+        </td>
+
+    </tr>
+</table>
+<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
